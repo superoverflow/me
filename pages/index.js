@@ -25,7 +25,7 @@ export default function Home(pageProps) {
       </Flex>
 
       <Heading sx={{ pl: 3 }} as="h3">
-        Projects 🔧
+      🔧 Projects 
       </Heading>
       <Grid columns={["auto", null, 2]} sx={{ m: 5 }}>
         {projects.map((project, index) => 
@@ -40,7 +40,7 @@ export default function Home(pageProps) {
       </Grid>
 
       <Heading sx={{ pl: 3 }} as="h3">
-        Articles 📝
+      📝 Articles 
       </Heading>
       <Flex sx={{ flexDirection: "column" }}>
         {articles.map((article, index) => (
@@ -54,25 +54,25 @@ export default function Home(pageProps) {
 export async function getStaticProps() {
   const projects = [
     {
-      title: "👍 TTwist Hoodies",
+      title: "👔 TTwist Hoodies",
       image: "ttwist.jpg",
       description: "A simple WooCommerence hoodie shop",
       link: "https://ttwist.co.uk/",
     },
     {
-      title: "🤞 WoW Fishing Bot",
+      title: "🤖 WoW Fishing Bot",
       image: "fishing.jpg",
       description: "Use OpenCV to make a fishing Bot in World Of Warcarft",
       link: "https://github.com/superoverflow/opencv_example",
     },
     {
-      title: "👌 Home Karaoke",
+      title: "🎤 Home Karaoke",
       image: "karaoke.png",
-      description: "Using docker to boot up a home karaoke",
+      description: "Using docker 🐳 to boot up a home karaoke",
       link: "https://github.com/superoverflow/myweb",
     },
     {
-      title: "✔ Reviewer Rota",
+      title: "🔀 Reviewer Rota",
       image: "rota.jpg",
       description: "Reviewer Rota built by React",
       link: "https://superoverflow.github.io/react-reviewer-rota",
