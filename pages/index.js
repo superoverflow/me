@@ -1,7 +1,8 @@
 import Head from "next/head";
-import { Grid, Flex, Heading } from "theme-ui";
+import { Container, Grid, Flex, Heading } from "theme-ui";
 import ProjectCard from "../components/ProjectCard";
 import Article from "../components/Article";
+import Header from "../components/Header";
 
 export default function Home(pageProps) {
   const { projects, articles } = pageProps;
@@ -9,44 +10,31 @@ export default function Home(pageProps) {
   return (
     <>
       <Head>
-        <title>Chiu Yat (Cyrus) Tang</title>
+        <title>superoverflow</title>
       </Head>
+      <Container>
+        <Header />
 
-      <Flex sx={{ flexDirection: "column", py: 3 }}>
-        <Heading sx={{ pl: 3 }} as="h1">
-          Chiu Yat (Cyrus) Tang
-        </Heading>
-        <Heading sx={{ pl: 3 }} as="h2">
-          Python Dev · London
-        </Heading>
-        <Heading sx={{ pl: 3 }} as="h3">
-          Python · React · DevOps
-        </Heading>
-      </Flex>
+        <Heading as="h3">🔧 Projects</Heading>
+        <Grid columns={["auto", null, "1fr 1fr 1fr"]}>
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              image={project.image}
+              description={project.description}
+              link={project.link}
+            />
+          ))}
+        </Grid>
 
-      <Heading sx={{ pl: 3 }} as="h3">
-      🔧 Projects 
-      </Heading>
-      <Grid columns={["auto", null, 2]} sx={{ m: 5 }}>
-        {projects.map((project, index) => 
-          <ProjectCard
-            key={index}
-            title={project.title}
-            image={project.image}
-            description={project.description}
-            link={project.link}
-          />
-        )}
-      </Grid>
-
-      <Heading sx={{ pl: 3 }} as="h3">
-      📝 Articles 
-      </Heading>
-      <Flex sx={{ flexDirection: "column" }}>
-        {articles.map((article, index) => (
-          <Article key={index} title={article.title} link={article.link} />
-        ))}
-      </Flex>
+        <Heading as="h3">📝 Articles</Heading>
+        <Flex sx={{ flexDirection: "column" }}>
+          {articles.map((article, index) => (
+            <Article key={index} title={article.title} link={article.link} />
+          ))}
+        </Flex>
+      </Container>
     </>
   );
 }
@@ -83,10 +71,13 @@ export async function getStaticProps() {
     {
       title: "📈 Visualising Data",
       link: "https://dev.to/superoverflow/visualising-data-52je",
+      description:
+        "Using React Library Vizx to display simple interactive chart",
     },
     {
       title: "🔽 Making a Dropdown",
       link: "https://dev.to/superoverflow/making-a-dropdown-1li0",
+      description: "Using ",
     },
   ];
   return {

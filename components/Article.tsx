@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Link } from "theme-ui";
+import { Link, Text } from "theme-ui";
 
 type Props = {
   title: string;
@@ -7,7 +7,11 @@ type Props = {
 };
 
 const Article: FC<Props> = ({ title, link }) => {
-  return <Link href={link}>{title}</Link>;
+  return (
+    <Text> {title} - {" "}
+      <Link href={link}>Link</Link>
+    </Text>
+  );
 };
 
 export default Article;

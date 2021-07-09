@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Flex, Card, Text, Link, Image } from "theme-ui";
+import { Card, Text, Link, Image } from "theme-ui";
 
 type Props = {
   title: string;
@@ -10,14 +10,14 @@ type Props = {
 
 const ProjectCard: FC<Props> = ({ title, image, description, link }) => {
   return (
-    <Flex sx={{ justifyContent: "center", flexDirection: "column" }}>
-      <Card>
-        <Text>{title}</Text>
+    
+      <Card sx={{ maxWidth: 512, py: 3}}>
+        <Text as="h4">{title}</Text>
         <Image src={`/${image}`} alt={image}  width={512} height={288} />
-        <Text>{description}</Text>
-        <Link href={link}> Link </Link>
+        <Text>{`${description} - `}</Text>
+        <Link href={link}>Link</Link>
       </Card>
-    </Flex>
+    
   );
 };
 

@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'theme-ui'
-import theme from '@carbonplan/theme'
+import theme from '@theme-ui/preset-swiss';
 
 function MyApp({ Component, pageProps }) {
   return (

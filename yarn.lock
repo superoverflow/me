@@ -88,11 +88,6 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@carbonplan/theme@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@carbonplan/theme/-/theme-5.0.0.tgz#c474f1be69edfd29756f8f852710f0817afbb422"
-  integrity sha512-UojSdBXJBt85WbDT2v10zMjQ0tUJR8mHk0F5sxbArYMVaX8Pc+83Hfdph6+Z8bOk7XHDJbsEBTsJbHrxAJmJ6g==
-
 "@emotion/babel-plugin@^11.3.0":
   version "11.3.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.3.0.tgz#3a16850ba04d8d9651f07f3fb674b3436a4fb9d7"
@@ -481,6 +476,11 @@
   dependencies:
     "@emotion/react" "^11.1.1"
     "@theme-ui/css" "0.10.0"
+
+"@theme-ui/preset-swiss@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-swiss/-/preset-swiss-0.10.1.tgz#65b2d591cbf045bfe6df28992d01dd48b0c0de0c"
+  integrity sha512-jHqprlAnTvzyWcaa2ufwhYnm1Ez2diAAjMpnA0ZtB1mynu5O+va6NtZgndvU6Ma6lbfCmJ3ybc/ZNcvupEtroQ==
 
 "@theme-ui/theme-provider@0.10.0":
   version "0.10.0"
