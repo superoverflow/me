@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'theme-ui'
-import theme from '@theme-ui/preset-swiss';
+import theme from '../src/index';
 
 function MyApp({ Component, pageProps }) {
   return (
