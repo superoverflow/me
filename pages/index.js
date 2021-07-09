@@ -1,8 +1,9 @@
 import Head from "next/head";
-import { Container, Grid, Flex, Heading, Divider, Text } from "theme-ui";
+import { Container, Grid, Flex, Heading, Divider } from "theme-ui";
 import ProjectCard from "../components/ProjectCard";
 import Article from "../components/Article";
 import Header from "../components/Header";
+import SectionDivider from "../components/SectionDivider";
 
 export default function Home(pageProps) {
   const { projects, articles } = pageProps;
@@ -13,13 +14,11 @@ export default function Home(pageProps) {
         <title>superoverflow</title>
       </Head>
       <Divider />
+
       <Container sx={{ maxWidth: 1024 }}>
         <Header />
 
-        <Heading as="h3" sx={{ pb: 3 }}>
-          🔧 Projects
-        </Heading>
-        <Divider />
+        <SectionDivider title="🔧 Projects" />
         <Grid sx={{ pb: 5 }} columns={["auto", null, "1fr 1fr"]}>
           {projects.map((project, index) => (
             <ProjectCard
@@ -32,11 +31,8 @@ export default function Home(pageProps) {
             />
           ))}
         </Grid>
-        
-        <Heading as="h3" sx={{ pb: 3 }}>
-          📝 Articles
-        </Heading>
-        <Divider />
+
+        <SectionDivider title="📝 Articles" />
         <Flex sx={{ flexDirection: "column", pl: 3, pb: 5 }}>
           {articles.map((article, index) => (
             <Article
