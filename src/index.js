@@ -18,6 +18,7 @@ const myTheme = {
       color: 'primary',
       bg: 'transparent',
       boxShadow: 'inset 0 0 0 1px',
+      p: 1
     },
   },
   cards: {
