@@ -47,7 +47,7 @@ export default function Home(pageProps) {
         </Flex>
 
         <Divider />
-        <Flex sx={{ justifyContent: "center" }}>© 2021, Built with ❤️</Flex>
+        <Flex sx={{ justifyContent: "center" }}>© 2022, Built with ❤️</Flex>
       </Container>
     </Flex>
   );

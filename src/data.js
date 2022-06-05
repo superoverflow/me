@@ -27,6 +27,13 @@ export const projects = [
     link: "https://superoverflow.github.io/react-reviewer-rota",
     tags: ["React"],
   },
+  {
+    title: "🔀 Crypto Backtester",
+    image: "backtest.jpeg",
+    description: "Backtest library using Rust with Binance data",
+    link: "https://github.com/superoverflow/crypto-strategy-analysis",
+    tags: ["Rust"],
+  },
 ];
 
 export const articles = [
