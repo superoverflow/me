@@ -1,34 +1,34 @@
 export const projects = [
   {
-    title: "👰 🤵 Wedding Invitation eCard, RSVP",
+    title: "👰 🤵 Wedding Invitation eCard",
     image: "tiffanymarryme.gif",
-    description: "a wedding invitation eCard that submit invitees' response on a google spreadsheet🧾",
+    description: "A wedding invitation eCard that submits invitees' response to a google spreadsheet🧾",
     link: "https://tiffanymarryme.vercel.app/",
     tags: ["GoogleAPI", "NextJS", "Framer Motion"]
   },
   {
-    title: "Money Tracker💰",
+    title: "Money Tracker 💰",
     image: "VanguardTracker.JPG",
-    description: "Login and scrap Vanguard Investment Table. Runnable as a docker image",
+    description: "Login and scrap Vanguard Investment Table. Runnable as a docker image.",
     link: "https://github.com/superoverflow/go-money-tracker",
     tags: ["Go", "Docker", "ChromeDP"]
   },
   {
     title: "This Page (yes! ✌)",
     image: "NextJS.JPG",
-    description: "A personal portfolio built with NextJS",
+    description: "A personal portfolio website built with NextJS",
     link: "https://github.com/superoverflow/me",
     tags: ["NextJS"]
   },
   {
-    title: "🔀 Crypto Backtester",
+    title: "💹 Crypto Backtester",
     image: "backtest.jpeg",
     description: "Backtest library using Rust with Binance data",
     link: "https://github.com/superoverflow/crypto-strategy-analysis",
     tags: ["Rust"],
   },
   {
-    title: "🔀 Reviewer Rota",
+    title: "Reviewer Rota 🔀",
     image: "rota.jpg",
     description: "Reviewer Rota built with React",
     link: "https://superoverflow.github.io/react-reviewer-rota",
