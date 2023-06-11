@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Crypto Dashboard💹",
+    image: "crypto-tracker.jpg",
+    description: "using Binance websocket to retrieve live prices for cryptos🚀",
+    link: "https://crypto-investment-journal.vercel.app/",
+    tags: ["Binance", "NextJS", "Websocket", "Rechart"]
+  },
+  {
     title: "👰 🤵 Wedding Invitation eCard",
     image: "tiffanymarryme.gif",
     description: "A wedding invitation eCard that submits invitees' response to a google spreadsheet🧾",
