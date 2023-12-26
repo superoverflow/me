@@ -1,6 +1,13 @@
 export const projects = [
   {
-    title: "Crypto Dashboard💹",
+    title: "OpenAI Youtube Watcher 📺",
+    image: "marketwatch.jpg",
+    description: "Using OpenAI API to summarise finance videos",
+    link: "https://marketwatch.superoverflow.com/",
+    tags: ["OpenAI", "NextJS"],
+  },
+  {
+    title: "Crypto Dashboard 💹",
     image: "crypto-tracker.jpg",
     description: "using Binance websocket to retrieve live prices for cryptos🚀",
     link: "https://crypto-investment-journal.vercel.app/",
@@ -33,13 +40,6 @@ export const projects = [
     description: "Backtest library using Rust with Binance data",
     link: "https://github.com/superoverflow/crypto-strategy-analysis",
     tags: ["Rust"],
-  },
-  {
-    title: "Reviewer Rota 🔀",
-    image: "rota.jpg",
-    description: "Reviewer Rota built with React",
-    link: "https://superoverflow.github.io/react-reviewer-rota",
-    tags: ["React"],
   },
 ];
 
